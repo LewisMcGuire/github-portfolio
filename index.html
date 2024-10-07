@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lewis McGuire | Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 56px; 
+        }
+        section {
+            padding-top: 76px; 
+            margin-top: -56px; 
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        html {
+            scroll-behavior: smooth; 
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover;
+        }
+    </style>
+</head>               
 <body>
-  
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Lewis McGuire</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#cv">CV</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<header class="jumbotron text-center">
+    <h1 class="display-4">Hello, I'm Lewis</h1>
+    <p class="lead">A passionate Computer Science student specializing in software development and AI from Dundee.</p>
+    <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+</header>
+
+<section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I am a second-year Computer Science student at the University of Dundee, driven by a passion for artificial intelligence, software development, and data science. Proficient in programming languages such as Python and Java, I am eager to apply my technical skills to tackle real-world challenges and innovate solutions.</p>
+</section>
+
+<section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="row">
+        <!-- Mock Messenger Application -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/mock-messanger-app.png" class="card-img-top" alt="Mock Messenger App">
+                <div class="card-body">
+                    <h5 class="card-title">Mock Messenger Application</h5>
+                    <p class="card-text">Collaborated with a team to design and develop a messenger app, enhancing real-time messaging features. My role included task allocation and debugging.</p>
+                    <a href="https://github.com/your-repo-link" class="btn btn-primary">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Morse Code Learning Tool -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/morse-code-learning-tool.png" class="card-img-top" alt="Morse Code Learning Tool">
+                <div class="card-body">
+                    <h5 class="card-title">Morse Code Learning Tool</h5>
+                    <p class="card-text">Developed an interactive tool using Python to help users learn Morse code. Designed user-friendly interfaces to enhance engagement.</p>
+                    <a href="https://github.com/your-repo-link" class="btn btn-primary">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+
+         <!-- UNIX Shell Project -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/unxi-shell.png" class="card-img-top" alt="UNIX Shell Project">
+                <div class="card-body">
+                    <h5 class="card-title">UNIX Shell Project</h5>
+                    <p class="card-text">Developed a custom UNIX shell in C, implementing various features like piping, background processes, and signal handling. This project enhanced my understanding of systems programming.</p>
+                    <a href="https://github.com/your-unix-project-repo-link" class="btn btn-primary">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quackathon Hackathon Project -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/quackathon.png" class="card-img-top" alt="Quackathon Hackathon Project">
+                <div class="card-body">
+                    <h5 class="card-title">Quackathon Hackathon Project</h5>
+                    <p class="card-text">Participated in the Quackathon hackathon and developed an innovative app that allows users to connect for study groups. I handled both the frontend and backend development, and our team won 2nd place!</p>
+                    <a href="https://github.com/your-quackathon-repo-link" class="btn btn-primary">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Web Development Project -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/website.png" class="card-img-top" alt="Web Development Project">
+                <div class="card-body">
+                    <h5 class="card-title">Web Development Project</h5>
+                    <p class="card-text">Designed and developed a fully responsive website using HTML, CSS, and JavaScript. The site includes features like interactive forms, dynamic content rendering, and responsive layouts.</p>
+                    <a href="https://github.com/your-web-project-repo-link" class="btn btn-primary">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mathematics Group Project -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/mathematics.png" class="card-img-top" alt="Mathematics Group Project">
+                <div class="card-body">
+                    <h5 class="card-title">Mathematics Collaborative Group Project</h5>
+                    <p class="card-text">A group project focused on solving complex mathematical problems using collaborative tools like Microsoft Teams. I led the synthesis of team ideas into cohesive solutions.</p>
+                    <a href="https://github.com/your-repo-link" class="btn btn-primary">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="container">
+    <h4>Technical Skills</h4>
+    <ul>
+        <li>Languages: Python, Java, HTML, CSS</li>
+        <li>Tools: GitHub</li>
+    </ul>
+
+    <h4>Soft Skills</h4>
+    <ul>
+        <li>Teamwork</li>
+        <li>Communication</li>
+        <li>Problem-solving</li>
+        <li>Time management</li>
+    </ul>
+</section>
+
+<section id="cv" class="container">
+    <p>Donwload CV: </p>
+</section>
+
+<section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+    <p>LinkedIn: </p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Lewis McGuire. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

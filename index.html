@@ -5,31 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lewis McGuire | Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            padding-top: 56px; 
-        }
-        section {
-            padding-top: 76px; 
-            margin-top: -56px; 
-        }
-        footer {
-            background-color: #f8f9fa;
-            padding: 20px 0;
-            text-align: center;
-        }
-        html {
-            scroll-behavior: smooth; 
-        }
-        .card-img-top {
-            width: 100%;
-            height: 200px; 
-            object-fit: cover;
-        }
-    </style>
-</head>               
+    <link rel="stylesheet" href="styles.css">
+</head>              
 <body>
-
+ 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="#">Lewis McGuire</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,10 +20,10 @@
                 <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="#cv">CV</a>
@@ -55,140 +34,189 @@
         </ul>
     </div>
 </nav>
+ 
+<header class="text-center jumbotron">
+    <div class="container">
+        <!-- Profile Photo -->
 
-<header class="jumbotron text-center">
-    <h1 class="display-4">Hello, I'm Lewis</h1>
-    <p class="lead">A passionate Computer Science student specializing in software development and AI from Dundee.</p>
-    <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+        <div class="profile-photo d-md-none d-block d-flex justify-content-center">
+            <img class="img-fluid profile-img-top" src="images/profile-photo.jpg" alt="Profile Photo">
+        </div>
+ 
+        <div class = "row align-items-center">
+            <div class = "col-md-8 col-12">
+                <h1 class="display-4">Hello, I'm Lewis</h1>
+                <p class="lead">A passionate Computer Science undergraduate, enthusiastic about AI and software development.</p>
+                <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+    
+                <!-- Social Links -->
+                <div class="mt-4">
+                    <a href="https://www.linkedin.com/in/lewis-mcguire-dundee-uni" target="_blank">
+                        <img class="social-icon-top social-icon-left" src="images/In-Blue-48.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/LewisMcGuire" target="_blank">
+                        <img class="social-icon-top" src="images/github-mark.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+            <div class = "col-4 d-md-block d-none">
+                <!-- Profile Photo -->
+                <div class="profile-photo">
+                    <img class="img-fluid profile-img-right" src="images/profile-photo.jpg" alt="Profile Photo">
+                </div>
+            </div>    
+        </div>
+    </div>
 </header>
-
+ 
 <section id="about" class="container">
     <h2>About Me</h2>
-    <p>I am a second-year Computer Science student at the University of Dundee, driven by a passion for artificial intelligence, software development, and data science. Proficient in programming languages such as Python and Java, I am eager to apply my technical skills to tackle real-world challenges and innovate solutions.</p>
+    <p>I am a second-year Computer Science student at the University of Dundee, driven by a passion for artificial intelligence, software development, and data science. Skilled in Python and Java, I thrive in collaborative settings, where I apply my problem-solving skills to develop innovative solutions. My experience in team projects and leadership roles, such as serving as Track Captain for the Athletics Club, has strengthened my communication and organisational abilities. I am eager to pursue opportunities in AI and machine learning, contributing to data-driven solutions and tackling real-world challenges.</p>
 </section>
-
+ 
+<section id="skills" class="container">
+    <h2>My Skills</h2>
+    <h5>Technical Skills</h5>
+    <ul>
+        <li>Languages: Python, Java, HTML, CSS</li>
+        <li>Tools: GitHub, Visual Studio Code, IntelliJ IDEA</li>
+    </ul>
+ 
+    <h5>Soft Skills</h5>
+    <ul>
+        <li>Problem-Solving: Applied critical thinking and analytical skills to tackle project challenges effectively.</li>
+        <li>Communication: Actively listened to team ideas and ensured alignment on project objectives.</li>
+        <li>Collaboration: Worked closely with teammates, providing essential support and guidance throughout projects.</li>
+        <li>Time Management: Efficiently prioritized tasks to meet project deadlines without compromising quality.</li>
+    </ul>
+</section>
+ 
 <section id="projects" class="container">
     <h2>Projects</h2>
     <div class="row">
         <!-- Mock Messenger Application -->
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="col-md-6 col-12 mb-4">
             <div class="card">
                 <img src="images/mock-messanger-app.png" class="card-img-top" alt="Mock Messenger App">
                 <div class="card-body">
-                    <h5 class="card-title">Mock Messenger Application</h5>
-                    <p class="card-text">Collaborated with a team to design and develop a messenger app, enhancing real-time messaging features. My role included task allocation and debugging.</p>
-                    <a href="https://github.com/your-repo-link" class="btn btn-primary">View on GitHub</a>
+                    <h4 class="card-title">Mock Messenger Application</h4>
+                    <p class="card-skills">Java, GitHub</p>
+                    <p class="card-text">Collaborated with a team to design and develop a mock messenger app. Played a key role in allocating tasks based on individual strengths and assisted in debugging teammates' code, ensuring a smooth development process and fostering a supportive team environment.</p>
+                    <a href="https://github.com/bouncingdiver/Chat-application-Java" class="btn btn-primary" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>
-        
+       
         <!-- Morse Code Learning Tool -->
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="col-md-6 col-12 mb-4">
             <div class="card">
                 <img src="images/morse-code-learning-tool.png" class="card-img-top" alt="Morse Code Learning Tool">
                 <div class="card-body">
-                    <h5 class="card-title">Morse Code Learning Tool</h5>
-                    <p class="card-text">Developed an interactive tool using Python to help users learn Morse code. Designed user-friendly interfaces to enhance engagement.</p>
-                    <a href="https://github.com/your-repo-link" class="btn btn-primary">View on GitHub</a>
+                    <h4 class="card-title">Morse Code Learning Tool</h4>
+                    <p class="card-skills">Python, HTML, CSS, Javascript</p>
+                    <p class="card-text">Developed an interactive tool to help users learn Morse code by integrating embedded systems with network functionality. Designed a user-friendly interface to ensure accessibility for all users. Took responsibility for time management, assigning individual tasks and maximising productivity during in-person meetings.</p>
+                    <a href="https://github.com/LewisMcGuire/Embedded-Systems" class="btn btn-primary" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>
-
-         <!-- UNIX Shell Project -->
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
+ 
+         <!-- Version Control System -->
+        <div class="col-md-6 col-12 mb-4">
             <div class="card">
                 <img src="images/unxi-shell.png" class="card-img-top" alt="UNIX Shell Project">
                 <div class="card-body">
-                    <h5 class="card-title">UNIX Shell Project</h5>
-                    <p class="card-text">Developed a custom UNIX shell in C, implementing various features like piping, background processes, and signal handling. This project enhanced my understanding of systems programming.</p>
-                    <a href="https://github.com/your-unix-project-repo-link" class="btn btn-primary">View on GitHub</a>
+                    <h4 class="card-title">Version Control System</h4>
+                    <p class="card-skills">Bash Script, Ubuntu</p>
+                    <p class="card-text">Developed a version control system using Bash script on Ubuntu to manage files efficiently. Provided clarity on project requirements to the team, ensuring all members understood their tasks, which contributed to faster project completion.</p>
+                    <a href="https://github.com/LewisMcGuire/Unix-Version-Control-System" class="btn btn-primary" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>
-
+ 
         <!-- Quackathon Hackathon Project -->
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="col-md-6 col-12 mb-4">
             <div class="card">
                 <img src="images/quackathon.png" class="card-img-top" alt="Quackathon Hackathon Project">
                 <div class="card-body">
-                    <h5 class="card-title">Quackathon Hackathon Project</h5>
-                    <p class="card-text">Participated in the Quackathon hackathon and developed an innovative app that allows users to connect for study groups. I handled both the frontend and backend development, and our team won 2nd place!</p>
-                    <a href="https://github.com/your-quackathon-repo-link" class="btn btn-primary">View on GitHub</a>
+                    <h4 class="card-title">Quackathon - Study Timer</h4>
+                    <p class="card-skills">Java, IntelliJ IDEA</p>
+                    <p class="card-text">Participated in a 24-hour hackathon organised by the computing society. Developed a GUI-based application using multithreading to create a study timer that helps users manage work and break intervals efficiently. Focused on ensuring smooth multithreaded execution and delivering a user-friendly interface within the time constraints.</p>
+                    <a href="https://github.com/SamWatt5/Quackathon2024" class="btn btn-primary" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>
-
+ 
         <!-- Web Development Project -->
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="col-md-6 col-12 mb-4">
             <div class="card">
                 <img src="images/website.png" class="card-img-top" alt="Web Development Project">
                 <div class="card-body">
-                    <h5 class="card-title">Web Development Project</h5>
-                    <p class="card-text">Designed and developed a fully responsive website using HTML, CSS, and JavaScript. The site includes features like interactive forms, dynamic content rendering, and responsive layouts.</p>
-                    <a href="https://github.com/your-web-project-repo-link" class="btn btn-primary">View on GitHub</a>
+                    <h4 class="card-title">Web Development Project</h4>
+                    <p class="card-skills">HTML, CSS, Bootstrap, GitHub</p>
+                    <p class="card-text">Designed and developed a responsive website inspired by Roller Coaster Tycoon. Implemented responsive design techniques to ensure the page adapts smoothly to various screen sizes. Learned to use GitHub for version control and collaboration, facilitating smooth teamwork and code management throughout the project.</p>
+                    <a href="https://github.com/UniversityOfDundee-Computing/wiki-coursework-group-2-roller-coaster-tycoon" class="btn btn-primary" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>
-
-        <!-- Mathematics Group Project -->
+ 
+        <!-- Mathematics Group Project 
         <div class="col-lg-4 col-md-6 col-12 mb-4">
             <div class="card">
                 <img src="images/mathematics.png" class="card-img-top" alt="Mathematics Group Project">
                 <div class="card-body">
-                    <h5 class="card-title">Mathematics Collaborative Group Project</h5>
-                    <p class="card-text">A group project focused on solving complex mathematical problems using collaborative tools like Microsoft Teams. I led the synthesis of team ideas into cohesive solutions.</p>
-                    <a href="https://github.com/your-repo-link" class="btn btn-primary">View on GitHub</a>
+                    <h4 class="card-title">Mathematics Collaborative Group Project</h4>
+                    <p>Microsoft Teams, Desmos</p>
+                    <p class="card-text">Led a group project focused on solving complex mathematical problems involving matrices. Organised and facilitated regular team meetings via Microsoft Teams, ensuring clear communication and effective task delegation. Applied critical thinking and communication skills to synthesise ideas from team members, ultimately delivering cohesive solutions to the collaborative challenges.</p>
+                    <a href="https://github.com/your-repo-link" class="btn btn-primary" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <!-- Battle Ship -->
+        <div class="col-md-6 col-12">
+            <div class="card">
+                <img src="images/battle-ship.png" class="card-img-top" alt="Battle Ship">
+                <div class="card-body">
+                    <h4 class="card-title">Battle Ship</h4>
+                    <p class="card-skills">Java</p>
+                    <p class="card-text">This personal project is a Java-based game inspired by the classic board game Battleship. I initially developed a text-based version to grasp the core mechanics, focusing on user interactions and game logic. Afterward, I expanded the project by creating a graphical user interface (GUI) version, enhancing the overall user experience with visuals and interactive elements.</p>
+                    <a href="https://github.com/LewisMcGuire/Battle-Ship" class="btn btn-primary" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="skills" class="container">
-    <h4>Technical Skills</h4>
-    <ul>
-        <li>Languages: Python, Java, HTML, CSS</li>
-        <li>Tools: GitHub</li>
-    </ul>
-
-    <h4>Soft Skills</h4>
-    <ul>
-        <li>Teamwork</li>
-        <li>Communication</li>
-        <li>Problem-solving</li>
-        <li>Time management</li>
-    </ul>
-</section>
-
 <section id="cv" class="container">
-    <p>Donwload CV: </p>
+    <h2>CV</h2>
+    <p>You can download my most up-to-date CV using the button below.</p>
+    <a href="Lewis_McGuire_CV.pdf" download="Lewis_McGuire_CV" class="btn btn-primary">
+        Download My CV
+    </a>
 </section>
-
+ 
 <section id="contact" class="container">
     <h2>Contact Me</h2>
-    <form>
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
-
-    <p>LinkedIn: </p>
+    <p>If you would like to get in touch, feel free to reach out to me via email or connect with me on LinkedIn.</p>
+    
+    <div class="contact-info mt-3">
+        <p><strong>Email:</strong> <a href="mailto:mcguirelewis6@gmail.com">mcguirelewis6@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lewis-mcguire-dundee-uni" target="_blank">Lewis McGuire on LinkedIn</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/LewisMcGuire" target="_blank">My GitHub Profile</a></p>
+    </div>
 </section>
-
+ 
 <footer>
-    <p>&copy; 2024 Lewis McGuire. All rights reserved.</p>
+    <a href="https://www.linkedin.com/in/lewis-mcguire-dundee-uni" target="_blank">
+        <img class="social-icon-bottom social-icon-left" src="images/In-Blue-48.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/LewisMcGuire" target="_blank">
+        <img class="social-icon-bottom" src="images/github-mark.png" alt="GitHub">
+    </a>
+    <p>Designed by Lewis McGuire</p>
 </footer>
-
+ 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

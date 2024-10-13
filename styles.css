@@ -1,0 +1,59 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 56px;
+}
+
+.jumbotron {
+  padding: 110px 0;
+}
+
+.profile-img-top {
+  margin-bottom: 20px; 
+  max-width: 300px;
+}
+
+.profile-img-top,
+.profile-img-right {
+  border-radius: 20%;
+}
+
+.social-icon-top {
+  width: 40px;
+  height: 40px;
+}
+
+.social-icon-left {
+  margin-right: 10px;
+}
+
+section {
+  padding-top: 76px;
+  margin-top: -56px;
+  margin-bottom: 50px;
+}
+
+.card-skills {
+  font-weight: 500;
+}
+
+.card-img-top {
+  width: 100%;  
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #e9ecef;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.social-icon-bottom {
+  width: 20px; 
+  height: 20px;
+  margin-bottom: 10px;
+}

@@ -40,7 +40,8 @@ section {
 }
 
 .card{
-  background-color: #F7F3E7/*#F7F3E7*/;
+  background-color: #F7F3E7;
+  border: 2px solid #555555;
 }
 
 .card-skills {
@@ -51,6 +52,7 @@ section {
   width: 100%;  
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  border-bottom: 2px solid #555555;
 }
 
 footer {

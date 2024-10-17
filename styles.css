@@ -35,6 +35,14 @@ section {
   margin-bottom: 50px;
 }
 
+.a {
+  color: #0056b3;
+}
+
+.card{
+  background-color: #F7F3E7/*#F7F3E7*/;
+}
+
 .card-skills {
   font-weight: 500;
 }

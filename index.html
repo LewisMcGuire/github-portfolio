@@ -53,7 +53,7 @@
         <div class = "row align-items-center">
             <div class = "col-md-8 col-12">
                 <h1 class="display-4">Hello, I'm Lewis</h1>
-                <p class="lead">A passionate Computer Science undergraduate, enthusiastic about software and systems development.</p>
+                <p class="lead">A passionate Computer Science undergraduate, enthusiastic about embedded systems and full-stack development.</p>
                 <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
     
                 <!-- Social Links -->
@@ -86,8 +86,11 @@
     <h2>My Skills</h2>
     <h5>Technical Skills</h5>
     <ul>
-        <li>Languages: Java, Python, HTML, CSS, JavaScript</li>
-        <li>Tools: GitHub, Visual Studio Code, IntelliJ IDEA, Android Studio</li>
+        <li><strong>Languages:</strong> Java, Python, C++, C Assembly, JavaScript</li>
+        <li><strong>Embedded & Systems:</strong> Microcontrollers, CPU design, Finite State Machines, Interrupts</li>
+        <li><strong>Tools & Envrionments:</strong> Git, Linux (Ubuntu), VS Code, IntelliJ IDEA, Android Studio</li>
+        <li><strong>Testing:</strong> Unit testing, Functional testing, Usability testing</li>
+        <li><strong>Other Technologies:</strong> PostgreSQL, HTML & CSS, Flask, Firebase, MongoDB</li>
     </ul>
  
     <h5>Soft Skills</h5>
@@ -102,8 +105,85 @@
 
 <!-- Projects -->
 <section id="projects" class="container">
-    <h2>Projects</h2>
-    <h4>Software & Mobile Development</h3>
+    <h2>Projects</h2>    
+    <h4>Embedded & Low-Level Development</h4>
+    <div class="row">
+        <!-- BBC Micro:Bit Assembly Project -->
+        <div class="col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/bbc-microbit.png" class="card-img-top" alt="BBC Micro:Bit Assembly Project">
+                <div class="card-body">
+                    <h4 class="card-title">BBC Micro:Bit Assembly Project</h4>
+                    <p class="card-skills">Assembly</p>
+                    <p class="card-text">Designed and implemented a dynamic light show in assembly, later extending it into a mini-RPG style game using finite state machine logic. The project required careful register management and efficient coding practices, deepening my understanding of low-level programming and its applications in higher-level languages.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Microarchitecture & ISA CPU Project -->
+        <div class="col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/cpu.png" class="card-img-top" alt="Microarchitecture & ISA CPU Project">
+                <div class="card-body">
+                    <h4 class="card-title">Microarchitecture & ISA CPU Project</h4>
+                    <p class="card-skills">Digital</p>
+                    <p class="card-text">Designed the microarchitecture and instruction set architecture (ISA) of an extended CPU in Digital, including the implementation of a stack data structure. Optimised modular design and minimized logic gate usage while balancing the trade-offs between ISA features and microarchitecture complexity. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Client-Server Authentication Protocols -->
+        <div class="col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/authentication.png" class="card-img-top" alt="Client-Server Authentication Protocols">
+                <div class="card-body">
+                    <h4 class="card-title">Client-Server Authentication Protocols</h4>
+                    <p class="card-skills">Python, Sockets</p>
+                    <p class="card-text">Developed both secure and intentionally subverted client-server authentication protocols using Python sockets, including a hidden backdoor designed under strict project constraints. Evaluated 20 authentication schemes to identify vulnerabilities, uncover subtle logic flaws, and apply creative problem-solving to detect or design backdoors.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Operating Systems - Scheduling Simulator -->
+        <div class="col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/process-scheduling-simulator.png" class="card-img-top" alt="Operating Systems - Scheduling Simulator">
+                <div class="card-body">
+                    <h4 class="card-title">Operating Systems - Scheduling Simulator</h4>
+                    <p class="card-skills">Java</p>
+                    <p class="card-text">Implemented a process scheduling simulator supporting multiple priority-based algorithms. Analysed performance to compare the strengths and limitations of each approach, recommending appropriate use cases based on efficiency and trade-offs.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Morse Code Learning Tool -->
+        <div class="col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/morse-code-learning-tool.png" class="card-img-top" alt="Morse Code Learning Tool">
+                <div class="card-body">
+                    <h4 class="card-title">Morse Code Learning Tool</h4>
+                    <p class="card-skills">Python, HTML, CSS, JavaScript</p>
+                    <p class="card-text">Developed an interactive tool to help users learn Morse code by integrating embedded systems with network functionality. Designed a user-friendly interface to ensure accessibility for all users. Took responsibility for time management, assigning individual tasks and maximising productivity during in-person meetings.</p>
+                    <!--<a href="https://github.com/LewisMcGuire/Embedded-Systems" class="btn btn-primary" target="_blank">View on GitHub</a>-->
+                </div>
+            </div>
+        </div>
+
+        <!-- Version Control System -->
+        <div class="col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/unxi-shell.png" class="card-img-top" alt="UNIX Shell Project">
+                <div class="card-body">
+                    <h4 class="card-title">Version Control System</h4>
+                    <p class="card-skills">Bash Script, Ubuntu</p>
+                    <p class="card-text">Developed a version control system using Bash script on Ubuntu to manage files efficiently. Provided clarity on project requirements to the team, ensuring all members understood their tasks, contributing to faster project completion. Encouraged regular team meetings and actively sought input from teammates, leading to innovative solutions and enhanced team cohesion.</p>
+                    <!--<a href="https://github.com/LewisMcGuire/Unix-Version-Control-System" class="btn btn-primary" target="_blank">View on GitHub</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4>Software & App Development</h3>
     <div class="row">
         <!-- Android Government Efficiency App -->
         <div class="col-md-6 col-12 mb-4">
@@ -113,6 +193,18 @@
                     <h4 class="card-title">Android Government Efficiency App</h4>
                     <p class="card-skills">Android Studio, Java, Firebase, GitLab</p>
                     <p class="card-text">Development an Android Studio app enabling citizens and workers to effectively report, track, and update city maintenance request. Collaborated in a five-person team, coordinating weekly meetings, task distribution, and project documentation. Designed presentation materials to showcase the app's functionality and development progress.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- OurStrideTogether - Social Running App -->
+        <div class="col-md-6 col-12 mb-4">
+            <div class="card">
+                <img src="images/our_stride_together.jpg" class="card-img-top" alt="OurStrideTogether - Social Running App">
+                <div class="card-body">
+                    <h4 class="card-title">OurStrideTogether - Social Running App</h4>
+                    <p class="card-skills">Flutter, Firebase, Google Places API</p>
+                    <p class="card-text">Implemented location autocomplete with Google Places, secure authentication and cloud data storage via Firebase, GPS-based attendance check-ins, and photo uploads from camera or gallery. Ensured reliability and accessibility through unit testing of core logic, Firebase data validation, and usability testing.</p>
                 </div>
             </div>
         </div>
@@ -143,7 +235,7 @@
         </div>
 
         <!-- Battle Ship -->
-        <div class="col-md-6 col-12">
+        <div class="col-md-6 col-12 mb-4">
             <div class="card">
                 <img src="images/battle-ship.png" class="card-img-top" alt="Battle Ship">
                 <div class="card-body">
@@ -168,70 +260,17 @@
             </div>
         </div>
     </div>
-    
-    <h4>Systems and Architecture</h4>
+
+    <h4>Web & Full-Stack Development</h4>
     <div class="row">
-        <!-- BBC Micro:Bit Assembly Project -->
+        <!-- Full-Stack Event & Review Platform -->
         <div class="col-md-6 col-12 mb-4">
             <div class="card">
-                <img src="images/bbc-microbit.png" class="card-img-top" alt="BBC Micro:Bit Assembly Project">
+                <img src="images/tabletop_campus.png" class="card-img-top" alt="Full-Stack Event & Review Platform">
                 <div class="card-body">
-                    <h4 class="card-title">BBC Micro:Bit Assembly Project</h4>
-                    <p class="card-skills">Assembly</p>
-                    <p class="card-text">Designed and implemented a dynamic light show in assembly, later extending it into a mini-RPG style game using finite state machine logic. The project required careful register management and efficient coding practices, deepening my understanding of low-level programming and its applications in higher-level languages.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Microarchitecture & ISA CPU Project -->
-        <div class="col-md-6 col-12 mb-4">
-            <div class="card">
-                <img src="images/cpu.png" class="card-img-top" alt="Microarchitecture & ISA CPU Project">
-                <div class="card-body">
-                    <h4 class="card-title">Microarchitecture & ISA CPU Project</h4>
-                    <p class="card-skills">Digital</p>
-                    <p class="card-text">Designed the microarchitecture and instruction set architecture (ISA) of an extended CPU in Digital, including the implementation of a stack data structure. Optimised modular design and minimized logic gate usage while balancing the trade-offs between ISA features and microarchitecture complexity. </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Operating Systems - Scheduling Simulator -->
-        <div class="col-md-6 col-12 mb-4">
-            <div class="card">
-                <img src="images/process-scheduling-simulator.png" class="card-img-top" alt="Operating Systems - Scheduling Simulator">
-                <div class="card-body">
-                    <h4 class="card-title">Operating Systems - Scheduling Simulator</h4>
-                    <p class="card-skills">Java</p>
-                    <p class="card-text">Implemented a process scheduling simulator supporting multiple priority-based algorithms. Analysed performance to compare the strengths and limitations of each approach, recommending appropriate use cases based on efficiency and trade-offs.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Version Control System -->
-        <div class="col-md-6 col-12 mb-4">
-            <div class="card">
-                <img src="images/unxi-shell.png" class="card-img-top" alt="UNIX Shell Project">
-                <div class="card-body">
-                    <h4 class="card-title">Version Control System</h4>
-                    <p class="card-skills">Bash Script, Ubuntu</p>
-                    <p class="card-text">Developed a version control system using Bash script on Ubuntu to manage files efficiently. Provided clarity on project requirements to the team, ensuring all members understood their tasks, contributing to faster project completion. Encouraged regular team meetings and actively sought input from teammates, leading to innovative solutions and enhanced team cohesion.</p>
-                    <!--<a href="https://github.com/LewisMcGuire/Unix-Version-Control-System" class="btn btn-primary" target="_blank">View on GitHub</a>-->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <h4>Web & Embedded Projects</h4>
-    <div class="row">
-        <!-- Morse Code Learning Tool -->
-        <div class="col-md-6 col-12 mb-4">
-            <div class="card">
-                <img src="images/morse-code-learning-tool.png" class="card-img-top" alt="Morse Code Learning Tool">
-                <div class="card-body">
-                    <h4 class="card-title">Morse Code Learning Tool</h4>
-                    <p class="card-skills">Python, HTML, CSS, JavaScript</p>
-                    <p class="card-text">Developed an interactive tool to help users learn Morse code by integrating embedded systems with network functionality. Designed a user-friendly interface to ensure accessibility for all users. Took responsibility for time management, assigning individual tasks and maximising productivity during in-person meetings.</p>
-                    <!--<a href="https://github.com/LewisMcGuire/Embedded-Systems" class="btn btn-primary" target="_blank">View on GitHub</a>-->
+                    <h4 class="card-title">Full-Stack Event & Review Platform</h4>
+                    <p class="card-skills">Flask, JavaScript, SQLite, HTML & CSS</p>
+                    <p class="card-text">Developing a full-stack web application with a Flask backend, SQLite database, and separate admin and client interfaces. Implementing full CRUD functionality, user authentication with planned role support, and integrating external API data into event and review features. Adding backend unit tests to ensure reliable behaviour while continuing front-end development.</p>
                 </div>
             </div>
         </div>
@@ -248,22 +287,6 @@
                 </div>
             </div>
         </div>
- 
-        <!-- Mathematics Group Project 
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
-            <div class="card">
-                <img src="images/mathematics.png" class="card-img-top" alt="Mathematics Group Project">
-                <div class="card-body">
-                    <h4 class="card-title">Mathematics Collaborative Group Project</h4>
-                    <p>Microsoft Teams, Desmos</p>
-                    <p class="card-text">Led a group project focused on solving complex mathematical problems involving matrices. Organised and facilitated regular team meetings via Microsoft Teams, ensuring clear communication and effective task delegation. Applied critical thinking and communication skills to synthesise ideas from team members, ultimately delivering cohesive solutions to the collaborative challenges.</p>
-                    <a href="https://github.com/your-repo-link" class="btn btn-primary" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-        </div>
-        -->
-
-        
     </div>
 </section>
 
